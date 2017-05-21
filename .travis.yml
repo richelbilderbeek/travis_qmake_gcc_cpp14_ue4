@@ -28,3 +28,13 @@ script:
   - qmake
   - make
   - ./travis_qmake_gcc_cpp14_ue4
+
+
+
+#after_script:
+#  - git config credential.helper "store --file=.git/credentials"
+#  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+#  - node ./node_modules/grunt-cli/bin/grunt release
+#env:
+#  global:
+#    secure: {"lots-of-seemingly-random-characters"}
