@@ -13,7 +13,9 @@ install:
   # C++14
   - sudo apt-get install -qq g++-5
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
-  # Build Unreal Engine 4 in a folder at the same depth
+  # Build Unreal Engine 4 in a folder at the same depth, must be user with a Epic Games account connect to a GitHub
+  - git config --global user.email "richel@richelbilderbeek.nl"
+  - git config --global user.name "richelbilderbeek"
   - cd ..
   - git clone https://github.com/EpicGames/UnrealEngine.git
   - cd UnrealEngine
